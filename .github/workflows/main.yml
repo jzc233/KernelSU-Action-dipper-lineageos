@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: LineageOS/android_kernel_xiaomi_sdm845
-  kernel_branch: lineage-21
+  kernel_repository: jzc233/kernel_xiaomi_sdm845_419
+  kernel_branch: perf
   device: dipper
-  clang_version: r487747c
+  clang_version: r416183b
   defconfig: |
-    vendor/xiaomi/mi845_defconfig
+    defconfig
     vendor/xiaomi/dipper.config
   kernel_patch: |
     allow-init-exec-ksud-under-nosuid.patch
