@@ -1,13 +1,13 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/kernel_xiaomi_sdm845_419
-  kernel_branch: perf
+  kernel_repository: jzc233/kernel_xiaomi_sdm845-419
+  kernel_branch: staging5
   device: dipper
   clang_version: 15
   defconfig: |
     defconfig
-    vendor/xiaomi/dipper.config
+    xiaomi/dipper.config
   kernel_patch: backport-path-umount.patch
   kernelsu_patch: |
 
