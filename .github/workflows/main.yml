@@ -169,7 +169,7 @@ jobs:
         run: |
           echo flags=" \
           O=out \
-          ARCH=arm64 \
+          ARCH=arm64 -mfloat-abi=soft \
           LLVM=1 \
           LLVM_IAS=1 \
           CROSS_COMPILE=aarch64-linux-gnu- \
