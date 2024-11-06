@@ -6,7 +6,7 @@ env:
   device: dipper
   clang_version: 15
   defconfig: |
-    vendor/sdm845-pef_defconfig
+    vendor/sdm845-perf_defconfig
     vendor/xiaomi/dipper.config
   kernel_patch: backport-path-umount.patch
   kernelsu_patch: |
