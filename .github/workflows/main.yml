@@ -1,13 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/D8G_Kernel
-  kernel_branch: main
+  kernel_repository: tanz3/kernel_xiaomi_sdm845-4.19
+  kernel_branch: staging5
   device: dipper
   clang_version: 15
   defconfig: |
     vendor/sdm845-perf_defconfig
-    vendor/xiaomi/dipper.config
   kernel_patch: |
   kernelsu_patch: |
 
