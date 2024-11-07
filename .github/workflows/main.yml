@@ -4,9 +4,10 @@ env:
   kernel_repository: tanz3/kernel_xiaomi_sdm845-4.19
   kernel_branch: staging5
   device: dipper
-  clang_version: 15
+  clang_version: r487747c
   defconfig: |
     vendor/sdm845-perf_defconfig
+    xiaomi/dipper.config
   kernel_patch: |
   kernelsu_patch: |
 
