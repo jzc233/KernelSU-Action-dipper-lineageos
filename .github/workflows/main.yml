@@ -1,13 +1,13 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/D8G_Kernel
+  kernel_repository: jzc233/kernel_xiaomi_sdm845_d8g
   kernel_branch: main
-  device: dipper
+  device: beryllium
   clang_version: r487747c
   defconfig: |
     vendor/sdm845-perf_defconfig
-    vendor/xiaomi/dipper.config
+    vendor/xiaomi/beryllium.config
   kernel_patch: |
   kernelsu_patch: |
 
