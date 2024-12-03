@@ -1,14 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: ArmSM/android_kernel_xiaomi_sm8150
-  kernel_branch: 14
+  kernel_repository: chematelegram/kernel_xiaomi_cepheus
+  kernel_branch: udc-merge
   device: cepheus
   clang_version: r522817
   defconfig: |
-    vendor/sm8150-perf_defconfig
-    vendor/xiaomi/sm8150-common.config
-    vendor/xiaomi/cepheus.config
+    cepheus_defconfig
   kernel_patch: |
   kernelsu_patch: |
 
