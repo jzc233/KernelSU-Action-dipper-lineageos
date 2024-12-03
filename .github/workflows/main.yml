@@ -1,16 +1,16 @@
 name: Check and Build
 
 env:
-  kernel_repository: LineageOS/android_kernel_xiaomi_sdm845
-  kernel_branch: lineage-21
-  device: dipper
-  clang_version: r487747c
+  kernel_repository: ArmSM/android_kernel_xiaomi_sm8150
+  kernel_branch: 14
+  device: cepheus
+  clang_version: r522817
   defconfig: |
-    vendor/xiaomi/mi845_defconfig
-    vendor/xiaomi/dipper.config
+    vendor/sm8150-perf_defconfig
+    vendor/xiaomi/sm8150-common.config
+    vendor/xiaomi/cepheus.config
   kernel_patch: |
-    allow-init-exec-ksud-under-nosuid.patch
-    backport-path-umount.patch
+   backport-path-umount.patch
   kernelsu_patch: |
 
 on:
@@ -37,7 +37,7 @@ jobs:
     outputs:
       local_version: ${{ steps.check_kernelsu_version.outputs.local_version }}
       remote_version: ${{ steps.check_kernelsu_version.outputs.remote_version }}
-
+        
   build:
     name: Build kernel
     needs: check_kernelsu_update
@@ -62,11 +62,17 @@ jobs:
               echo clang_version=$clang_version | tee -a $GITHUB_ENV
           fi
 
+      - name: Set swap to 30G
+        uses: pierotofy/set-swap-space@master
+        with:
+          swap-size-gb: 30
+        
       - name: Install packages
         run: |
           sudo apt update
           sudo apt install -y \
               binutils-arm-linux-gnueabi \
+              python2 \
               binutils-aarch64-linux-gnu
 
       - name: Checkout kernel source
@@ -172,6 +178,7 @@ jobs:
           echo flags=" \
           O=out \
           ARCH=arm64 \
+          LD=ld.lld \
           LLVM=1 \
           LLVM_IAS=1 \
           CROSS_COMPILE=aarch64-linux-gnu- \
