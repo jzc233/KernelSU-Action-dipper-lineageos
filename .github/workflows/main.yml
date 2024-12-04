@@ -1,7 +1,7 @@
 name: Check and Build
 
 env:
-  kernel_repository: chematelegram/kernel_xiaomi_cepheus
+  kernel_repository: jzc233/kernel_xiaomi_cepheus-udc
   kernel_branch: udc-merge
   device: cepheus
   clang_version: r522817
