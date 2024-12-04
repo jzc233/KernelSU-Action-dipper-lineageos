@@ -6,7 +6,7 @@ env:
   device: cepheus
   clang_version: r522817
   defconfig: |
-    sm8150-perf_defconfig
+    vendor/sm8150-perf_defconfig
     vendor/xiaomi/sm8150-common.config
     vendor/xiaomi/cepheus.config
   kernel_patch: |
