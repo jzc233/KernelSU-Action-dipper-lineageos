@@ -177,6 +177,7 @@ jobs:
           echo flags=" \
           O=out \
           ARCH=arm64 \
+          USE_CCACHE=1 \
           CC=clang \
           AR=llvm-ar \
           NM=llvm-nm \
