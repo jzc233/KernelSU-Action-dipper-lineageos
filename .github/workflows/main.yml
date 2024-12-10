@@ -1,13 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/D8G_Kernel
-  kernel_branch: sdm845
-  device: dipper
+  kernel_repository: jzc233/cepheus-marisa
+  kernel_branch: haptic
+  device: cepheus
   clang_version: r522817
   defconfig: |
-    vendor/sdm845-perf_defconfig
-    vendor/xiaomi/beryllium.config
+    cepheus_defconfig
   kernel_patch: |
   kernelsu_patch: |
 
