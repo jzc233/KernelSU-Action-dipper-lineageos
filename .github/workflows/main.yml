@@ -1,12 +1,14 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/kernel_xiaomi_vayu
-  kernel_branch: cr14
+  kernel_repository: WitAqua-Devices/kernel_xiaomi_nabu
+  kernel_branch: 14
   device: cepheus
   clang_version: r522817
   defconfig: |
-    cepheus_defconfig
+    vendor/sm8150-perf_defconfig
+    vendor/xiaomi/sm8150common.config
+    vendor/xiaomi/cepheus.config
   kernel_patch: |
   kernelsu_patch: |
 
