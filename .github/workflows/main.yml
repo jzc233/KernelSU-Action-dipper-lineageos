@@ -1,8 +1,8 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/cepheus-marisa
-  kernel_branch: haptic
+  kernel_repository: jzc233/kernel_xiaomi_vayu
+  kernel_branch: cr14
   device: cepheus
   clang_version: r522817
   defconfig: |
