@@ -1,14 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: WitAqua-Devices/kernel_xiaomi_nabu
-  kernel_branch: 14
+  kernel_repository: jzc233/NGK_android_kernel_xiaomi_sdm845
+  kernel_branch: t-caf-latest
   device: cepheus
   clang_version: r522817
   defconfig: |
-    vendor/sm8150-perf_defconfig
-    vendor/xiaomi/sm8150-common.config
-    vendor/xiaomi/cepheus.config
+    equuleus_defconfig
   kernel_patch: |
   kernelsu_patch: |
 
