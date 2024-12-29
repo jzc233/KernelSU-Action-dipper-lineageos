@@ -4,7 +4,7 @@ env:
   kernel_repository: WitAqua-Devices/kernel_xiaomi_sdm845
   kernel_branch: 15
   device: dipper
-  clang_version: r522817
+  clang_version: r416183b
   defconfig: |
     vendor/sdm845-perf_defconfig
     vendor/xiaomi/sdm845-common.config
