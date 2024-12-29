@@ -1,14 +1,14 @@
 name: Check and Build
 
 env:
-  kernel_repository: dev-harsh1998/android_kernel_xiaomi_nabu
-  kernel_branch: lineage-21
-  device: cepheus
+  kernel_repository: WitAqua-Devices/kernel_xiaomi_sdm845
+  kernel_branch: 15
+  device: dipper
   clang_version: r522817
   defconfig: |
-    vendor/sm8150-perf_defconfig
-    vendor/xiaomi/sm8150-common.config
-    vendor/xiaomi/cepheus.config
+    vendor/sdm845-perf_defconfig
+    vendor/xiaomi/sdm845-common.config
+    vendor/xiaomi/dipper.config
   kernel_patch: |
   kernelsu_patch: |
 
