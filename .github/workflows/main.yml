@@ -1,13 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: WitAqua-Devices/kernel_xiaomi_sdm845
-  kernel_branch: 15
+  kernel_repository: jzc233/PEkernel_xiaomi_sdm845
+  kernel_branch: fourteen
   device: dipper
   clang_version: r416183b
   defconfig: |
-    vendor/sdm845-perf_defconfig
-    vendor/xiaomi/dipper.config
+    dipper_defconfig
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
