@@ -1,13 +1,14 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/android_kernel_xiaomi_sdm845_test
-  kernel_branch: main
-  device: dipper
+  kernel_repository: PixelOS-Devices/kernel_xiaomi_sm8150
+  kernel_branch: fourteen
+  device: cepheus
   clang_version: r416183b
   defconfig: |
-   vendor/xiaomi/mi845_defconfig
-   vendor/xiaomi/dipper.config
+   vendor/sm8150-perf_defconfig
+   vendor/xiaomi/cepheus.config
+   vendor/xiaomi/sm8150-common.config
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
