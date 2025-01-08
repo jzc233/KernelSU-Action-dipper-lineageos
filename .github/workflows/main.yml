@@ -8,6 +8,7 @@ env:
   defconfig: |
    vendor/sdm845-perf_defconfig
    vendor/xiaomi/dipper.config
+   vendor/xiaomi/sdm845-common.config
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
