@@ -7,7 +7,7 @@ env:
   clang_version: r416183b
   defconfig: |
    vendor/sdm845-perf_defconfig
-   vendorxiaomi/dipper.config
+   vendor/xiaomi/dipper.config
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
