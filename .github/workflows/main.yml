@@ -71,7 +71,6 @@ jobs:
           sudo apt update
           sudo apt install -y \
               binutils-arm-linux-gnueabi \
-              python2 \
               binutils-aarch64-linux-gnu
 
       - name: Checkout kernel source
