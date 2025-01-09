@@ -1,13 +1,14 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/android_kernel_xiaomi_beryllium
-  kernel_branch: rebase
+  kernel_repository: tanz3/kernel_xiaomi_sdm845-4.19
+  kernel_branch: lineage-20
   device: dipper
   clang_version: r416183b
   defconfig: |
    vendor/sdm845-perf_defconfig
-   vendor/xiaomi/dipper.config
+   xiaomi/dipper.config
+   xiaomi/sdm845-common.config
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
