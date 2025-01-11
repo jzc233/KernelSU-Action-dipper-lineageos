@@ -2,7 +2,7 @@ name: Check and Build
 
 env:
   kernel_repository: jzc233/kernel_xiaomi_sdm845-4.19
-  kernel_branch: staging5
+  kernel_branch: lineage-20
   device: dipper
   clang_version: r416183b
   defconfig: |
