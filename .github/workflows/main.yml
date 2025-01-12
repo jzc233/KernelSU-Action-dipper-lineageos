@@ -8,7 +8,6 @@ env:
   defconfig: |
    vendor/sdm845-perf_defconfig
    vendor/xiaomi/dipper.config
-   vendor/xiaomi/sdm845-common.config
   kernel_patch: |
   kernelsu_patch: |
 
