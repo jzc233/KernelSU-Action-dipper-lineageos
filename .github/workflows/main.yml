@@ -67,11 +67,12 @@ jobs:
         
       - name: Install packages
         run: |
+          sudo add-apt-repository universe
           sudo apt update
           sudo apt install -y \
               binutils-arm-linux-gnueabi \
               binutils-aarch64-linux-gnu \
-              python3
+              python2
 
       - name: Checkout kernel source
         uses: actions/checkout@v4
