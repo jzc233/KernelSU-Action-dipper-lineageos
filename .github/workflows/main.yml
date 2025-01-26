@@ -1,8 +1,8 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/kernel_xiaomi_nabu
-  kernel_branch: 14
+  kernel_repository: jzc233/kernel_vayu_sm8150
+  kernel_branch: fiveteen
   device: cepheus
   clang_version: r416183b
   defconfig: |
