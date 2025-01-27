@@ -3,10 +3,10 @@ name: Check and Build
 env:
   kernel_repository: jzc233/kernel_vayu_sm8150
   kernel_branch: fiveteen-miui
-  device: cepheus
+  device: vayu
   clang_version: r416183b
   defconfig: |
-   cepheus_defconfig
+   vayu_defconfig
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
