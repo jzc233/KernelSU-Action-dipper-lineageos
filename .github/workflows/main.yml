@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/kernel_vayu_sm8150
-  kernel_branch: fiveteen-miui
-  device: vayu
+  kernel_repository: qaz6750/android_kernel_xiaomi_sm8150
+  kernel_branch: a14-xiaomi-4.14.y
+  device: cepheus
   clang_version: r416183b
   defconfig: |
-   vayu_defconfig
+   cepheus_defconfig
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
