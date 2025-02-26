@@ -2,7 +2,7 @@ name: Check and Build
 
 env:
   kernel_repository: qaz6750/android_kernel_xiaomi_sm8150
-  kernel_branch: a14-xiaomi-4.14.y
+  kernel_branch: a13-xiaomi-4.19.y-test
   device: cepheus
   clang_version: r416183b
   defconfig: |
