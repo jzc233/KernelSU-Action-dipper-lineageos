@@ -1,14 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: minaripenguin/android_kernel_xiaomi_nabu
-  kernel_branch: fifteen
+  kernel_repository: jzc233/6.9
+  kernel_branch: 14
   device: cepheus
   clang_version: r416183b
   defconfig: |
-   vendor/xiaomi/cepheus.config
-   vendor/xiaomi/sm8150-common.config
-   vendor/sm8150-perf_defconfig
+   cepheus_defconfig
   kernel_patch: |
 
   kernelsu_patch: |
