@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/6.9
-  kernel_branch: 14
-  device: cepheus
+  kernel_repository: ruoqing501/xiaomi_kernel_crux
+  kernel_branch: master
+  device: crux
   clang_version: r416183b
   defconfig: |
-   cepheus_defconfig
+   crux_defconfig
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
