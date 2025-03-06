@@ -1,8 +1,8 @@
 name: Check and Build
 
 env:
-  kernel_repository: ruoqing501/xiaomi_kernel_crux
-  kernel_branch: master
+  kernel_repository: jzc233/kernel_xiaomi_cepheus
+  kernel_branch: 14
   device: crux
   clang_version: r416183b
   defconfig: |
