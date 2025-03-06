@@ -1,12 +1,14 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/kernel_xiaomi_cepheus
-  kernel_branch: 14
+  kernel_repository: xiaomi-sm8150-devs/android_kernel_xiaomi_sm8150
+  kernel_branch: lineage-21
   device: crux
   clang_version: r416183b
   defconfig: |
-   crux_defconfig
+   vendor/sm8150-perf_defconfig
+   vendor/sm8150-common.config
+   vendor/xiaomi/crux.config
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
