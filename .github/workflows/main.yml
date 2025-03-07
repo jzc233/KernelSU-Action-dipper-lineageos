@@ -1,14 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: dev-harsh1998/android_kernel_xiaomi_nabu
-  kernel_branch: lineage-21
+  kernel_repository: jzc233/kernel_xiaomi_cepheus
+  kernel_branch: 14
   device: crux
   clang_version: r416183b
   defconfig: |
-   vendor/xiaomi/crux.config
-   vendor/xiaomi/sm8150-common.config
-   vendor/sm8150-perf_defconfig
+   crux_defconfig
   kernel_patch: |
    
   kernelsu_patch: |
