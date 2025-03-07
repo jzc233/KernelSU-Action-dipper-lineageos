@@ -1,12 +1,14 @@
 name: Check and Build
 
 env:
-  kernel_repository: Youyu-Github/kernel_xiaomi_cepheus
-  kernel_branch: 14
+  kernel_repository: dev-harsh1998/android_kernel_xiaomi_nabu
+  kernel_branch: lineage-21
   device: crux
   clang_version: r416183b
   defconfig: |
-   crux_defconfig
+   vendor/xiaomi/crux.config
+   vendor/Xiaomi/sm8150-common.config
+   vendor/sm8150-perf_defconfig
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
