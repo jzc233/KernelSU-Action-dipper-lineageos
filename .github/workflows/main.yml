@@ -7,7 +7,7 @@ env:
   clang_version: r416183b
   defconfig: |
    vendor/xiaomi/crux.config
-   vendor/Xiaomi/sm8150-common.config
+   vendor/xiaomi/sm8150-common.config
    vendor/sm8150-perf_defconfig
   kernel_patch: |
    backport-path-umount.patch
