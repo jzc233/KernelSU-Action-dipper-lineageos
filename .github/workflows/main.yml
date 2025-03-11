@@ -1,8 +1,8 @@
 name: Check and Build
 
 env:
-  kernel_repository: TheVoyager0777/Kernel_Xiaomi_SM8150_R
-  kernel_branch: VK-VI
+  kernel_repository: TheDoctor12/android_kernel_xiaomi_sm8150
+  kernel_branch: crux
   device: crux
   clang_version: r416183b
   defconfig: |
