@@ -10,7 +10,7 @@ env:
    vendor/xiaomi/sm8150-common.config
    vendor/xiaomi/crux.config
   kernel_patch: |
-   backport-path-umount.patch
+   
   kernelsu_patch: |
 
 on:
