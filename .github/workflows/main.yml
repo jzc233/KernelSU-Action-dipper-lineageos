@@ -1,14 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: crdroidandroid/android_kernel_xiaomi_sm8150
-  kernel_branch: 15.0-bpf
-  device: crux
+  kernel_repository: jzc233/PEkernel_xiaomi_sdm845
+  kernel_branch: fourteen
+  device: ursa
   clang_version: r416183b
   defconfig: |
-   vendor/sm8150-perf_defconfig 
-   vendor/xiaomi/sm8150-common.config
-   vendor/xiaomi/crux.config
+   ursa_defconfig 
   kernel_patch: |
    
   kernelsu_patch: |
