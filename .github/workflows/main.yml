@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/PEkernel_xiaomi_sdm845
-  kernel_branch: fourteen
-  device: ursa
+  kernel_repository: jzc233/kernel_xiaomi_sdm845_bpf
+  kernel_branch:  android-v
+  device: dipper
   clang_version: r416183b
   defconfig: |
-   ursa_defconfig 
+   nogravity-dipper_defconfig 
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
