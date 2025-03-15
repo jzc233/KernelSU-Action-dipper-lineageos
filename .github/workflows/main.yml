@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/kernel_xiaomi_sdm845_bpf
-  kernel_branch:  android-v
+  kernel_repository: TheVoyager0777/Kernel_Xiaomi_SM8150_R
+  kernel_branch:  VK-VI
   device: dipper
   clang_version: r416183b
   defconfig: |
-   nogravity-dipper_defconfig 
+   crux_defconfig 
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
