@@ -6,7 +6,7 @@ env:
   device: crux
   clang_version: r487747c
   defconfig: |
-   marisa_defconfig 
+   crux_defconfig 
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
