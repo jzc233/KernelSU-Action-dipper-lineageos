@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: TheVoyager0777/Kernel_Xiaomi_SM8150_R
-  kernel_branch:  VK-VI
-  device: dipper
+  kernel_repository: Meaning114514/marisa/
+  kernel_branch:  marisa-4.14.336
+  device: crux
   clang_version: r487747c
   defconfig: |
-   crux_defconfig 
+   marisa_defconfig 
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
