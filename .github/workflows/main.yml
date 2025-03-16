@@ -1,7 +1,7 @@
 name: Check and Build
 
 env:
-  kernel_repository: Meaning114514/marisa/
+  kernel_repository: Meaning114514/marisa
   kernel_branch:  marisa-4.14.336
   device: crux
   clang_version: r487747c
