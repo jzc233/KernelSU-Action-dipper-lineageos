@@ -1,7 +1,7 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/kernel_xiaomi_crux
+  kernel_repository: jzc233/xiaomi_kernel_crux
   kernel_branch:  master
   device: crux
   clang_version: r416183b
