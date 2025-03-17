@@ -1,8 +1,8 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/xiaomi_kernel_crux
-  kernel_branch:  master
+  kernel_repository: jzc233/Kernel_Xiaomi_SM8150_R
+  kernel_branch:  VK-VI
   device: crux
   clang_version: r416183b
   defconfig: |
