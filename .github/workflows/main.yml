@@ -1,8 +1,8 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/crux-marisa
-  kernel_branch:  openela
+  kernel_repository: jzc233/kernel_xiaomi_crux
+  kernel_branch:  main
   device: crux
   clang_version: r416183b
   defconfig: |
