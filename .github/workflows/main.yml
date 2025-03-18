@@ -1,8 +1,8 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/xiaomi_kernel_crux
-  kernel_branch:  master
+  kernel_repository: jzc233/crux-marisa
+  kernel_branch:  marisa-4.14.336
   device: crux
   clang_version: r416183b
   defconfig: |
