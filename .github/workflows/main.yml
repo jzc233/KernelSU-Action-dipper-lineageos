@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/kernel_xiaomi_sm8150
-  kernel_branch:  crux
+  kernel_repository: jzc233/crux-marisa
+  kernel_branch:  openela
   device: crux
   clang_version: r416183b
   defconfig: |
-   crux_user_defconfig
+   crux_defconfig
   kernel_patch: |
    
   kernelsu_patch: |
