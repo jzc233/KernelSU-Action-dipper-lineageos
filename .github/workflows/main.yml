@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/crux-marisa
-  kernel_branch:  openela
-  device: crux
+  kernel_repository: LuoxueQWQ/kernel_xiaomi_sdm845
+  kernel_branch:  android-v
+  device: polaris
   clang_version: r416183b
   defconfig: |
-   crux_defconfig
+   nogravity-polaris_defconfig
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
