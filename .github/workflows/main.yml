@@ -1,13 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/android_kernel_xiaomi_sdm845_419
-  kernel_branch:  stable-release
-  device: dipper
+  kernel_repository: jzc233/crux-marisa
+  kernel_branch:  dynamic
+  device: crux
   clang_version: r416183b
   defconfig: |
-   vendor/sdm845-perf_defconfig
-   vendor/xiaomi/dipper.config
+   crux_defconfig
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
