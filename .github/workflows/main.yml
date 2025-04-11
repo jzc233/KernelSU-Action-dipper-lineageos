@@ -1,8 +1,8 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/crux-marisa
-  kernel_branch:  dynamic
+  kernel_repository: jzc233/kernel_vayu_sm8150
+  kernel_branch:  fiveteen
   device: crux
   clang_version: r416183b
   defconfig: |
