@@ -1,12 +1,14 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/kernel_vayu_sm8150
-  kernel_branch:  miui
-  device: crux
+  kernel_repository: duckyduckG/kernel_xiaomi_sdm845-4.19
+  kernel_branch:  lineage-22.2
+  device: dipper
   clang_version: r416183b
   defconfig: |
-   vayu_defconfig
+   vendor/sdm845-perf_defconfig
+   xiaomi/sdm845-common.config
+   xiaomi/dipper.config
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
