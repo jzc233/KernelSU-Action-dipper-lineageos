@@ -1,8 +1,8 @@
 name: Check and Build
 
 env:
-  kernel_repository: duckyduckG/kernel_xiaomi_sdm845-4.19
-  kernel_branch:  lineage-22.2
+  kernel_repository: jzc233/kernel_xiaomi_sdm845-4.19
+  kernel_branch:  heyya
   device: dipper
   clang_version: r416183b
   defconfig: |
