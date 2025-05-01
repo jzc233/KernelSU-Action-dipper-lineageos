@@ -1,12 +1,14 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/crux-marisa
-  kernel_branch:  haptic
-  device: crux
+  kernel_repository: jzc233/kernel_xiaomi_sdm845_d8g
+  kernel_branch:  dipper
+  device: dipper
   clang_version: r416183b
   defconfig: |
-   crux_defconfig
+   vendor/sdm845-perf_defconfig
+   vendor/xiaomi/sdm845-common.config
+    vendor/xiaomi/dipper.config
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
