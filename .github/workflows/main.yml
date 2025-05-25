@@ -2,11 +2,13 @@ name: Check and Build
 
 env:
   kernel_repository: jzc233/android_kernel_xiaomi_crux
-  kernel_branch:  crux
+  kernel_branch:  test
   device: crux
   clang_version: r416183b
   defconfig: |
-   crux_defconfig
+   vendor/xiaomi/crux.config
+   vendor/xiaomi/sm8150-common.config
+   vendor/sm8150-perf_defconfig
   kernel_patch: |
    backport-path-umount.patch
   kernelsu_patch: |
