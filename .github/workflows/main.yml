@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: jzc233/android_kernel_xiaomi_crux
-  kernel_branch:  test
-  device: crux
+  kernel_repository: jzc233/kernel_sm8150/tree/cepheus
+  kernel_branch:  cepheus
+  device: cepheus
   clang_version: r416183b
   defconfig: |
-   vendor/xiaomi/crux.config
+   vendor/xiaomi/cepheus.config
    vendor/xiaomi/sm8150-common.config
    vendor/sm8150-perf_defconfig
   kernel_patch: |
