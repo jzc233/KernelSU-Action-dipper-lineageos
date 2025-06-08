@@ -12,7 +12,7 @@ env:
   kernel_patch: |
 
   kernelsu_patch: |
-
+   backport-path-umount.patch
 on:
   workflow_dispatch:
     inputs:
