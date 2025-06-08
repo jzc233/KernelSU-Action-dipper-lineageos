@@ -74,7 +74,7 @@ jobs:
               binutils-arm-linux-gnueabi \
               binutils-aarch64-linux-gnu \
               device-tree-compiler \
-              python2
+              python2.7
 
       - name: Checkout kernel source
         uses: actions/checkout@v4
