@@ -74,8 +74,7 @@ jobs:
               binutils-arm-linux-gnueabi \
               binutils-aarch64-linux-gnu \
               device-tree-compiler \
-              python3 \
-              sudo ln -s /usr/bin/python3 /usr/bin/python2
+              python2
 
       - name: Checkout kernel source
         uses: actions/checkout@v4
