@@ -2,7 +2,7 @@ name: Check and Build
 
 env:
   kernel_repository: jzc233/kernel_sm8150
-  kernel_branch:  cepheus
+  kernel_branch:  A15
   device: cepheus
   clang_version: r416183b
   defconfig: |
